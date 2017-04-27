@@ -1,0 +1,825 @@
+/*html {font-size: 100%;}*/
+/*IE 调整字体大小 会打破弹性布局*/
+body{
+    margin: 0;
+    padding: 0;
+}
+#hHPage {
+    width: 100%;
+    background: -webkit-linear-gradient(#E7EEF6, #eef3f9);
+    background: -o-linear-gradient(#E7EEF6, #eef3f9);
+    background: -moz-linear-gradient(#E7EEF6, #eef3f9);
+    background: linear-gradient(#E7EEF6, #eef3f9);
+    /*解决IE6-9渐变兼容*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7EEF6', endColorstr='#eef3f9',GradientType=0 );
+}
+/*由于 filter 是 ie 的私有属性，所以我们需要针对 ie9 单独处理滤镜效果*/
+:root .gradient{filter:none;}
+#hPage {
+    width:1050px;
+    height:657px;
+    background: -webkit-linear-gradient(#E7EEF6, #eef3f9);
+    background: -o-linear-gradient(#E7EEF6, #eef3f9);
+    background: -moz-linear-gradient(#E7EEF6, #eef3f9);
+    background: linear-gradient(#E7EEF6, #eef3f9);
+    margin: 0 auto;
+}
+#hPage .header {
+    height: 50px;
+    overflow: hidden;
+}
+
+#hPage .header h1{
+    position: absolute;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#hPage .header .logo {
+    width: 170px;
+    height: 50px;
+    float: left;
+    margin-left: 80px;
+}
+#hPage .header .logo img {
+    width: 100%;
+}
+#hPage .header .nav{
+    float: left;
+    margin-left: 20px;
+ }
+#hPage .header .nav ul{
+    margin:0;
+    padding: 0;
+}
+#hPage .header .nav ul li {
+    float: left;
+    line-height: 50px;
+    list-style: none;
+}
+#hPage .header .nav ul li a {
+    text-decoration: none;
+    color: #7f7e84;
+    padding: 0 0 12px 0;
+    margin: 0 16px;
+    font-family:"microsoft YaHei", "sans-serif";
+    font-size: 14px;
+}
+#hPage .header .nav ul li a:hover {
+    border-bottom: 2px solid #7f7e84;
+}
+#hPage .header .navIcon {
+    float: right;
+    width: 225px;
+    height: 50px;
+}
+
+#hPage .header .navIcon i{
+    padding: 0 24px;
+    line-height: 50px;
+}
+#hPage .header .navIcon a{
+    text-decoration: none;
+}
+#hPage .header .navIcon a:hover {
+    color: #c5c9e2;
+}
+/*header end*/
+#hPage .mLeft{
+    width: 288px;
+    float: left;
+}
+
+#hPage .mLeft .hMain .hMTiele {
+    width: 297px;
+    height: 250px;
+    margin:90px 0 30px 80px ;
+}
+#hPage .mLeft .hMain .hMsection {
+    width: 297px;
+    margin-left: 80px;
+}
+
+#hPage .mLeft .hMain .hMTiele h2 {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 56px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+#hPage .mLeft .hMain .hMsection h4 {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 24px;
+    margin: 0;
+}
+#hPage .mLeft .mIcon {
+    margin: 70px 0 0 80px;
+}
+/*mLeft end*/
+#hPage .mCenter {
+    float: left;
+}
+#hPage .mCenter .mainfigure {
+    width: 451px;
+    height: 607px;
+    float: left;
+    margin: 0 0 0 68px;
+}
+
+/*mCenter end*/
+
+#hPage .mRight {
+    float: right;
+    width: 80px;
+    height: 220px;
+    margin: 100px 58px 0 0;
+}
+#hPage .mRight .decorative {
+    width: 4px;
+    height: 80px;
+    background: #c5c9e2;
+    float: right;
+    margin: 0 0 20px 0;
+    border-radius: 3px;
+}
+#hPage .mRight h5 {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 56px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+#hPage .mRight h6 {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 26px;
+    word-spacing: 5px;
+    text-align: right;
+    margin: 10px 0 0 0;
+}
+#hPage .mRight .mRBottom{
+    float: right;
+    width: 130px;
+    height: 150px;
+    margin: 120px 0 0 0;
+}
+#hPage .mRight .mRBottom h4 {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    line-height: 32px;
+    margin: 0;
+}
+#hPage .mRight .mRBottom .decorativeRight {
+    width: 40px;
+    height: 4px;
+    background: #c5c9e2;
+    float: right;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+}
+/*mRight end*/
+#hMainTwo {
+    width: 100%;
+}
+#hMainTwoContent {
+    width:1050px;
+    height: 600px;
+    margin: 0 auto;
+}
+#hMainTwoContent .hMainTwoContentcenter {
+    width: 360px;
+}
+#hMainTwoContent .hMainTwoContentleft {
+    margin: 80px 0 0 88px;
+}
+#hMainTwoContent .hMainTwoContentright {
+    float: right;
+    margin:80px 0 0 1px;
+}
+#hMainTwoContent .hMainTwoContentcenter{
+    float: right;
+    margin: 140px 30px 0 0;
+}
+#hMainTwoContent .hMainTwoContentcenter h2{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 30px;
+    font-weight: 200;
+    text-align: right;
+}
+#hMainTwoContent .hMainTwoContentcenter .hMainTwoContentcenterDecorative {
+    width: 84px;
+    height: 3px;
+    background: #c5c9e2;
+    border-radius: 3px;
+    margin: -17px 4px 0 0;
+    float: right;
+}
+#hMainTwoContent .hMainTwoContentcenter .hMainTwoContentcentertop {
+    margin-top: 10px;
+}
+#hMainTwoContent .hMainTwoContentcenter .hMainTwoContentcentertop p{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 16px;
+    line-height: 10px;
+    text-align: right;
+}
+#hMainTwoContent .hMainTwoContentcenter .hMainTwoContentcenterBottm {
+    margin-top: 60px;
+}
+#hMainTwoContent .hMainTwoContentcenter .hMainTwoContentcenterBottm p {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: right;
+    line-height: 12px;
+}
+#hMainTwoContent .hMainTwoContentcenter .hMainTwoContentcenterBottmLink {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #7d7dd3;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #c5c9e2;
+    text-decoration: none;
+    float: right;
+    margin-top: 24px;
+}
+#hMainTwoContent .hMainTwoContentcenter .hMainTwoContentcenterBottmLink:hover{
+    background: #7d7dd3;
+    color: #fff;
+}
+/*hMainTwo end*/
+
+#hMainThree {
+    width: 100%;
+}
+#hMainThreeContent {
+    width: 1050px;
+    height: 700px;
+    margin: 0 auto;
+}
+#hMainThreeContent .hMainThreeContentLeft {
+    margin-top: 90px;
+    float: left;
+}
+#hMainThreeContent .hMainThreeContentCenter {
+    float: left;
+    width: 348px;
+    height: 320px;
+    margin: 108px 0 0 62px;
+}
+#hMainThreeContent .hMainThreeContentCenter .hMainThreeContentCenterTop h2 {
+    margin: 0;
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 30px;
+    font-weight: 200;
+    text-align: left;
+}
+#hMainThreeContent .hMainThreeContentCenter .hMainThreeContentCenterTop .hMainThreeContentCenterdecorative{
+    width: 84px;
+    height: 3px;
+    background: #c5c9e2;
+    border-radius: 3px;
+    float: left;
+    margin-top: 8px;
+}
+#hMainThreeContent .hMainThreeContentCenter .hMainThreeContentCenterTop p {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 16px;
+    line-height: 8px;
+    text-align: left;
+    margin-top: 24px;
+}
+#hMainThreeContent .hMainThreeContentCenter .hMainThreeContentCenterBottom {
+    margin-top: 50px;
+}
+#hMainThreeContent .hMainThreeContentCenter .hMainThreeContentCenterBottom p {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: left;
+    line-height: 12px;
+}
+#hMainThreeContent .hMainThreeContentCenter .hMainThreeContentCenterBottom .hMainThreeContentCenterBottomLink {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #7d7dd3;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #c5c9e2;
+    text-decoration: none;
+    float: left;
+    margin-top: 50px;
+}
+#hMainThreeContent .hMainThreeContentCenter .hMainThreeContentCenterBottom .hMainThreeContentCenterBottomLink:hover {
+    background: #7d7dd3;
+    color: #fff;
+}
+#hMainThreeContent .hMainThreeContentCenterBottomFigure {
+    float: right;
+    margin: 30px 58px 0 0;
+}
+#hMainThreeContent .hMainThreeContentCenterBottomBottomText {
+    margin-top: 78px;
+}
+/*hMainThree end*/
+
+#hMainFour {
+    width: 100%;
+}
+#hMainFourContent {
+    width: 1050px;
+    height: 718px;
+    margin: 0 auto;
+    position: relative;
+}
+#hMainFourContent .hMainFourContentCenter {
+    width: 396px;
+    float: left;
+    margin: 144px 0 0 86px;
+}
+#hMainFourContent .hMainFourContentCenter h3   {
+    margin: 0;
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#hMainFourContent .hMainFourContentCenter h2   {
+    margin: 8px 0 0 0;
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#hMainFourContent .hMainFourContentCenter h4   {
+    margin: 20px 0 16px 0;
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#hMainFourContent .hMainFourContentCenter h4 span {
+    color: #a3a3df;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#hMainFourContent .hMainFourContentCenter .hMainFourContentText ul {
+    margin: 0;
+    padding:0;
+}
+#hMainFourContent .hMainFourContentCenter .hMainFourContentText ul li{
+    list-style: none;
+    background: url(../img/hMainFourContentTextUlLi.gif) no-repeat 10px 7px;
+    padding-left:20px;
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    line-height: 20px;
+}
+#hMainFourContent .hMainFourContentCenter .hMainFourContentButton .hMainFourContentButtonLinkBuy, #hMainFourContent .hMainFourContentCenter .hMainFourContentButton .hMainFourContentButtonLinkRead {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #7d7dd3;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #c5c9e2;
+    text-decoration: none;
+    float: left;
+    margin: 36px 12px 0 0;
+}
+#hMainFourContent .hMainFourContentCenter .hMainFourContentButton .hMainFourContentButtonLinkBuy:hover, #hMainFourContent .hMainFourContentCenter .hMainFourContentButton .hMainFourContentButtonLinkRead:hover {
+    background: #7d7dd3;
+    color: #fff;
+}
+#hMainFourContent .hMainFourContentRightFirure {
+    float: right;
+    margin: 24px 0 60px 0;
+    width: 494px;
+    height: 548px;
+    background: #dee7f0;
+}
+#hMainFourContent .hMainFourContentCenterCenter {
+    width: 366px;
+    height: 466px;
+    position: absolute;
+    top:108px;
+    left: 378px;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterXK{
+    display: block;
+    margin: 0 auto;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterLeft, #hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterRight{
+    display: block;
+    width:38px;
+    height:38px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 36px;
+    font-size: 30px;
+    color: #7a76d5;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterLeft:hover, #hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterRight:hover{
+    border: 1px solid #7a76d5;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterLeft{
+    position: absolute;
+    top: 232px;
+    left: 14px;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterRight{
+    position: absolute;
+    top: 232px;
+    right: 14px;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterSpan{
+    width: 144px;
+    height: 68px;
+    position: absolute;
+    bottom: 32px;
+    left: 104px;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterSpan .hMainFourContentCenterCenterSpanDiv1, #hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterSpan .hMainFourContentCenterCenterSpanDiv2{
+    width: 14px;
+    height: 14px;
+    background: #7d7dd3;
+    float: left;
+    margin: 28px 12px 0 12px;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterSpan .hMainFourContentCenterCenterSpanDivCenter .hMainFourContentCenterCenterSpanDivCenter {
+    width: 14px;
+    height: 14px;
+    background: #9292d8;
+    float: left;
+    transform: rotate(90deg);
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterSpan .hMainFourContentCenterCenterSpanDivCenter {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #9292d8;
+    transform: rotate(45deg);
+    float: left;
+    margin: 13px;
+}
+#hMainFourContent .hMainFourContentCenterCenter .hMainFourContentCenterCenterRightFirure{
+    position: absolute;
+    top: 52px;
+    left: 106px;
+}
+/*hMainThree end*/
+#hMainFive {
+    width: 100%;
+}
+#hMainFiveContent{
+    width: 1050px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#hMainFiveContent .hMainFiveContentImage{
+    width: 904px;
+    margin: 60px 75px;
+}
+#hMainFiveContent .hMainFiveContentOne {
+    width: 204px;
+    height: 414px;
+    /*border: 1px solid #dbdae1;*/
+    background: #fdfdfd;
+    border-radius: 3px;
+    float: left;
+    margin: 0 10px;
+}
+#hMainFiveContent .hMainFiveContentOne:hover{
+    box-shadow: 0 0 20px 5px rgba(193, 193, 193, 0.5);
+}
+#hMainFiveContent .hMainFiveContentImage .hMainFiveContentOne .hMainFiveContentImageTextTop p{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 14px;
+    float: left;
+    line-height: 14px;
+    margin: 34px 4px 15px;
+}
+#hMainFiveContent .hMainFiveContentImage .hMainFiveContentOne .hMainFiveContentImageTextTop span{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    float: right;
+    line-height: 12px;
+    margin: 34px 4px 15px;
+}
+#hMainFiveContent .hMainFiveContentImage .hMainFiveContentOne .hMainFiveContentImageTextBottom p {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 16px;
+    float: left;
+    line-height: 14px;
+    margin: 0 0 0 4px;
+}
+#hMainFiveContent .hMainFiveContentImage .hMainFiveContentOne .hMainFiveContentImageTextBottom span {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 11px;
+    float: right;
+    line-height: 12px;
+    margin: 0 5px 0 4px;
+}
+/*hMainFive end*/
+#hMainSix{
+    width: 100%;
+}
+#hMainSixCenter{
+    width: 1050px;
+    height: 546px;
+    margin: 0 auto;
+}
+#hMainSixCenter img {
+    margin-top: 62px;
+}
+/*hMainSi endx*/
+#hMainSeven{
+    width: 100%;
+}
+#hMainSevenCenter{
+    width: 1050px;
+    height: 700px;
+    margin: 0 auto;
+}
+#hMainSevenCenter img {
+    margin-top: 20px;
+}
+#hMainSevenCenter .hMainSevenCenterCenter .hMainSevenCenterCenterOne img {
+    float: left;
+    margin: 0;
+}
+#hMainSevenCenter .hMainSevenCenterTop .hMainSevenCenterCenter{
+    width: 482px;
+    float: left;
+    margin: 92px 20px 0;
+}
+#hMainSevenCenter .hMainSevenCenterCenter .hMainSevenCenterCenterOne .hMainSevenCenterCenterOneText  {
+    width: 250px;
+    height: 210px;
+    float: left;
+    margin-left: 20px;
+}
+#hMainSevenCenter .hMainSevenCenterCenter .hMainSevenCenterCenterOne .hMainSevenCenterCenterOneText .hMainSevenCenterCenterOneTextTop p {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: right;
+    line-height: 12px;
+}
+#hMainSevenCenter .hMainSevenCenterCenter .hMainSevenCenterCenterOne .hMainSevenCenterCenterOneText .hMainSevenCenterCenterOneTextTop h3{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 16px;
+    text-align: right;
+    line-height: 12px;
+    font-weight: 100;
+    word-spacing: 3px;
+}
+#hMainSevenCenter .hMainSevenCenterCenter .hMainSevenCenterCenterOne .hMainSevenCenterCenterOneText .hMainSevenCenterCenterOneTextTop .hMainSevenCenterCenterOneTextDecorative{
+    width: 80px;
+    height: 3px;
+    background: #c5c9e2;
+    float: right;
+    margin: 0;
+    border-radius: 3px;
+}
+#hMainSevenCenter .hMainSevenCenterCenterOneTextBottom{
+    margin: 50px 0 0 0;
+}
+#hMainSevenCenter .hMainSevenCenterCenterOneTextBottom p{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: right;
+    line-height: 12px;
+    margin: 5px 0 0 0;
+}
+
+
+
+
+#hMainSevenCenter .hMainSevenCenterCenterOne1 img {
+    float: right;
+    margin: 0;
+}
+#hMainSevenCenter .hMainSevenCenterCenter1{
+    width: 482px;
+    float: left;
+    margin:50px 20px 0;
+}
+#hMainSevenCenter .hMainSevenCenterCenter1 .hMainSevenCenterCenterOne1 .hMainSevenCenterCenterOneText1  {
+    width: 250px;
+    height: 210px;
+    float: left;
+    margin-right: 20px;
+}
+#hMainSevenCenter .hMainSevenCenterCenter1 .hMainSevenCenterCenterOne1 .hMainSevenCenterCenterOneText1 .hMainSevenCenterCenterOneTextTop1 p {
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: left;
+    line-height: 12px;
+}
+#hMainSevenCenter .hMainSevenCenterCenter1 .hMainSevenCenterCenterOne1 .hMainSevenCenterCenterOneText1 .hMainSevenCenterCenterOneTextTop1 h3{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 16px;
+    text-align: left;
+    line-height: 12px;
+    font-weight: 100;
+    word-spacing: 3px;
+}
+#hMainSevenCenter .hMainSevenCenterCenter1 .hMainSevenCenterCenterOne1 .hMainSevenCenterCenterOneText1 .hMainSevenCenterCenterOneTextTop1 .hMainSevenCenterCenterOneTextDecorative1{
+    width: 80px;
+    height: 3px;
+    background: #c5c9e2;
+    float: left;
+    margin: 0;
+    border-radius: 3px;
+}
+#hMainSevenCenter .hMainSevenCenterCenterOneTextBottom1{
+    margin: 50px 0 0 0;
+}
+#hMainSevenCenter .hMainSevenCenterCenterOneTextBottom1 p{
+    color: #c5c9e2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: left;
+    line-height: 12px;
+    margin: 5px 0 0 0;
+}
+
+
+
+
+/*hMainSeven end*/
+#hMainEight{
+    width:100%;
+}
+#hMainEightContent {
+    width: 1050px;
+    height: 228px;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px #7f7e84;
+}
+#hMainEightContent img {
+    float: left;
+}
+
+#hMainEightContent .hMainEightContentButton{
+    position: relative;
+}
+#hMainEightContent .hMainEightContentButton a{
+    position: absolute;
+    top: 174px;
+    left: 472px;
+    display: block;
+    width: 100px;
+    height: 28px;
+    color: #fff;
+    border: 1px solid #c3c9e1;
+    border-radius: 20px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 12px;
+    text-align: center;
+}
+#hMainEightContent .hMainEightContentButton a:hover{
+    background: #fff;
+    color: #202020;
+}
+/*hMainEight end*/
+#hMainNine{
+     width:100%;
+    height: 68px;
+    border-bottom: 2px solid #f5f5f5;
+}
+#hMainNineContent{
+    width: 1050px;
+    height: 68px;
+    margin: 0 auto;
+}
+#hMainNineContent ul {
+    text-align: center;
+}
+#hMainNineContent ul li {
+    display: inline;
+    line-height: 68px;
+}
+#hMainNineContent ul li a{
+    text-decoration: none;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 14px;
+    color: #bcc0dd;
+    padding: 0 12px 24px;
+}
+#hMainNineContent ul li a:hover{
+    color: #6c6fcc;
+    border-bottom: 2px solid #6c6fcc;
+}
+/*hMainEight end*/
+#hMainTen{
+    width: 100%;
+    border-bottom: 2px solid #f5f5f5;
+}
+#hMainTenContent{
+    width: 1050px;
+    height: 230px;
+    margin: 24px auto;
+
+}
+#hMainTenContent .hMainTenContentDiv{
+    width: 175px;
+    float: left;
+}
+#hMainTenContent .hMainTenContentDiv h3{
+    margin: 0 0 0 40px;
+    color: #6c6fcc;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 16px;
+    font-weight: 100;
+    text-align: left;
+}
+#hMainTenContent .hMainTenContentDiv ul{
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0 40px;
+}
+#hMainTenContent .hMainTenContentDiv ul li{
+    list-style: none;
+    display: block;
+    text-align: left;
+    margin: 20px 0;
+}
+#hMainTenContent .hMainTenContentDiv ul li a{
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 14px;
+    text-decoration: none;
+    color: #c4c4ea;
+}
+#hMainTenContent .hMainTenContentDiv ul li a:hover{
+    color: #6c6fcc;
+}
+/*hMainTen end*/
+#hMainMessage{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #f5f5f5;
+}
+#hMainMessageContent{
+    width: 1050px;
+
+    margin: 0 auto;
+    overflow: hidden;
+}
+#hMainMessageContent p {
+    text-align: center;
+}
+#hMainMessageContent a {
+    text-decoration: none;
+    color: #c4c7ee;
+}
+#hMainMessageContent a:hover {
+    color: #6c6fcc;
+}
+#hMainMessageContent a i {
+    font-size: 20px;
+    margin: 0 30px;
+}
+#hMainMessageCopyright p{
+    text-align: center;
+    color: #a1a2a2;
+    font-family: "microsoft YaHei", "sans-serif";
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 18px;
+}
+/*hMainMessage end*/
